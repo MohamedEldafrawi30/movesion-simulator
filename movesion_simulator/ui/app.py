@@ -25,8 +25,13 @@ st.set_page_config(
 # Clean, minimal styling
 st.markdown("""
 <style>
-    /* Full width on desktop */
-    .block-container {
+    /* Force wide mode - target all possible Streamlit containers */
+    .main .block-container,
+    [data-testid="stAppViewContainer"] .block-container,
+    .st-emotion-cache-1y4p8pa,
+    .st-emotion-cache-z5fcl4,
+    .css-1y4p8pa,
+    .css-z5fcl4 {
         max-width: 95% !important;
         padding-left: 2rem !important;
         padding-right: 2rem !important;
@@ -34,7 +39,9 @@ st.markdown("""
     
     /* Mobile responsive */
     @media (max-width: 768px) {
-        .block-container {
+        .main .block-container,
+        [data-testid="stAppViewContainer"] .block-container {
+            max-width: 100% !important;
             padding-left: 1rem !important;
             padding-right: 1rem !important;
         }
