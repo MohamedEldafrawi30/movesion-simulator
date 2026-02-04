@@ -16,7 +16,7 @@ import streamlit as st
 # ============================================================================
 
 st.set_page_config(
-    page_title="Movesion Pricing Calculator",
+    page_title="Mobility Pay Business Model Simulator",
     page_icon="💳",
     layout="wide",
     initial_sidebar_state="collapsed",  # Start with sidebar collapsed
@@ -218,8 +218,8 @@ def main():
     """Main application."""
     
     # Header
-    st.markdown('<h1 class="main-title">💳 Employee Card Pricing Calculator</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="subtitle">Find the right subscription price for your card program</p>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-title">💳 Mobility Pay Business Model Simulator</h1>', unsafe_allow_html=True)
+    st.markdown('<p class="subtitle">Model your employee card business profitability</p>', unsafe_allow_html=True)
     
     # Check API connection (optional - app works standalone)
     api_url = get_api_url()
