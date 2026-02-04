@@ -25,6 +25,23 @@ st.set_page_config(
 # Clean, minimal styling
 st.markdown("""
 <style>
+    /* Make app full width */
+    .block-container {
+        max-width: 100% !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+    
+    /* Remove default max-width on main content */
+    .main .block-container {
+        max-width: 100% !important;
+    }
+    
+    /* Make dataframes full width */
+    .stDataFrame {
+        width: 100% !important;
+    }
+    
     /* Clean header */
     .main-title {
         font-size: 2.5rem;
