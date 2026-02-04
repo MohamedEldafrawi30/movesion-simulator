@@ -25,34 +25,25 @@ st.set_page_config(
 # Clean, minimal styling
 st.markdown("""
 <style>
-    /* Force full width on Streamlit */
-    .main > div {
-        max-width: 100% !important;
-    }
+    /* Full width on desktop */
     .block-container {
-        max-width: 100% !important;
-        width: 100% !important;
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
-        padding-top: 1rem !important;
-    }
-    section[data-testid="stSidebar"] {
-        width: 0px !important;
-        min-width: 0px !important;
-    }
-    .css-1d391kg, .css-12oz5g7, .st-emotion-cache-1d391kg {
-        max-width: 100% !important;
-    }
-    [data-testid="stAppViewContainer"] {
-        max-width: 100% !important;
-    }
-    .stApp {
-        max-width: 100% !important;
+        max-width: 95% !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
     }
     
-    /* Make dataframes and charts full width */
-    .stDataFrame, .stPlotlyChart {
-        width: 100% !important;
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+        .block-container {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+        .main-title {
+            font-size: 1.5rem !important;
+        }
+        .subtitle {
+            font-size: 0.9rem !important;
+        }
     }
     
     /* Clean header */
