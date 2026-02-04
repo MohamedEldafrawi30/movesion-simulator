@@ -608,7 +608,7 @@ Set your card fees above these costs to make profit!""")
         st.error(f"❌ **Loss!** Revenue €{total_revenue:,.0f} - Costs €{total_cost:,.0f} = **€{net_profit:,.0f}**")
     
     # Expandable details
-    with st.expander("📊 See Breakdown"):
+    with st.expander("📊 See Breakdown", expanded=True):
         
         # ====== REVENUE BREAKDOWN ======
         st.markdown("### 💰 Revenue Breakdown")
