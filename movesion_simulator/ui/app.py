@@ -25,20 +25,33 @@ st.set_page_config(
 # Clean, minimal styling
 st.markdown("""
 <style>
-    /* Make app full width */
+    /* Force full width on Streamlit */
+    .main > div {
+        max-width: 100% !important;
+    }
     .block-container {
         max-width: 100% !important;
-        padding-left: 2rem !important;
-        padding-right: 2rem !important;
+        width: 100% !important;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+        padding-top: 1rem !important;
     }
-    
-    /* Remove default max-width on main content */
-    .main .block-container {
+    section[data-testid="stSidebar"] {
+        width: 0px !important;
+        min-width: 0px !important;
+    }
+    .css-1d391kg, .css-12oz5g7, .st-emotion-cache-1d391kg {
+        max-width: 100% !important;
+    }
+    [data-testid="stAppViewContainer"] {
+        max-width: 100% !important;
+    }
+    .stApp {
         max-width: 100% !important;
     }
     
-    /* Make dataframes full width */
-    .stDataFrame {
+    /* Make dataframes and charts full width */
+    .stDataFrame, .stPlotlyChart {
         width: 100% !important;
     }
     
