@@ -1,0 +1,746 @@
+[
+  {
+    "name": "S2 Baseline @3k",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 3000,
+      "monthly_net_adds": 0,
+      "churn_rate": 0.0
+    },
+    "issuance": {
+      "physical_share_issued": 0.0,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 200.0,
+      "in_app_share": 0.5,
+      "avg_ticket": 50.0,
+      "ecom_share": 0.3,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.95,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": false,
+        "kyc_attempt": false,
+        "account_documents": false,
+        "dispute": false,
+        "sms": false,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": false,
+      "physical_delivery": false,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.0,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.0,
+      "sms_per_active_user_month": 0.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  },
+  {
+    "name": "S3 Baseline @6k",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 6000,
+      "monthly_net_adds": 0,
+      "churn_rate": 0.0
+    },
+    "issuance": {
+      "physical_share_issued": 0.0,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 200.0,
+      "in_app_share": 0.5,
+      "avg_ticket": 50.0,
+      "ecom_share": 0.3,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.95,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": false,
+        "kyc_attempt": false,
+        "account_documents": false,
+        "dispute": false,
+        "sms": false,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": false,
+      "physical_delivery": false,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.0,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.0,
+      "sms_per_active_user_month": 0.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  },
+  {
+    "name": "S4 Baseline @9k",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 9000,
+      "monthly_net_adds": 0,
+      "churn_rate": 0.0
+    },
+    "issuance": {
+      "physical_share_issued": 0.0,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 200.0,
+      "in_app_share": 0.5,
+      "avg_ticket": 50.0,
+      "ecom_share": 0.3,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.95,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": false,
+        "kyc_attempt": false,
+        "account_documents": false,
+        "dispute": false,
+        "sms": false,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": false,
+      "physical_delivery": false,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.0,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.0,
+      "sms_per_active_user_month": 0.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  },
+  {
+    "name": "S5 Low in-app share 20% @6k",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 6000,
+      "monthly_net_adds": 0,
+      "churn_rate": 0.0
+    },
+    "issuance": {
+      "physical_share_issued": 0.0,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 200.0,
+      "in_app_share": 0.2,
+      "avg_ticket": 50.0,
+      "ecom_share": 0.3,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.95,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": false,
+        "kyc_attempt": false,
+        "account_documents": false,
+        "dispute": false,
+        "sms": false,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": false,
+      "physical_delivery": false,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.0,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.0,
+      "sms_per_active_user_month": 0.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  },
+  {
+    "name": "S6 High in-app share 70% @6k",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 6000,
+      "monthly_net_adds": 0,
+      "churn_rate": 0.0
+    },
+    "issuance": {
+      "physical_share_issued": 0.0,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 200.0,
+      "in_app_share": 0.7,
+      "avg_ticket": 50.0,
+      "ecom_share": 0.3,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.95,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": false,
+        "kyc_attempt": false,
+        "account_documents": false,
+        "dispute": false,
+        "sms": false,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": false,
+      "physical_delivery": false,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.0,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.0,
+      "sms_per_active_user_month": 0.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  },
+  {
+    "name": "S7 Public transport heavy (ticket €15) @6k",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 6000,
+      "monthly_net_adds": 0,
+      "churn_rate": 0.0
+    },
+    "issuance": {
+      "physical_share_issued": 0.0,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 200.0,
+      "in_app_share": 0.5,
+      "avg_ticket": 15.0,
+      "ecom_share": 0.3,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.95,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": false,
+        "kyc_attempt": false,
+        "account_documents": false,
+        "dispute": false,
+        "sms": false,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": false,
+      "physical_delivery": false,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.0,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.0,
+      "sms_per_active_user_month": 0.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  },
+  {
+    "name": "S8 Taxi heavy (ticket €120, spend €4800/yr) @3k",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 3000,
+      "monthly_net_adds": 0,
+      "churn_rate": 0.0
+    },
+    "issuance": {
+      "physical_share_issued": 0.0,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 400.0,
+      "in_app_share": 0.5,
+      "avg_ticket": 120.0,
+      "ecom_share": 0.3,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.95,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": false,
+        "kyc_attempt": false,
+        "account_documents": false,
+        "dispute": false,
+        "sms": false,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": false,
+      "physical_delivery": false,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.0,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.0,
+      "sms_per_active_user_month": 0.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  },
+  {
+    "name": "S9 E-com heavy 60% @6k",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 6000,
+      "monthly_net_adds": 0,
+      "churn_rate": 0.0
+    },
+    "issuance": {
+      "physical_share_issued": 0.0,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 200.0,
+      "in_app_share": 0.5,
+      "avg_ticket": 50.0,
+      "ecom_share": 0.6,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.95,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": false,
+        "kyc_attempt": false,
+        "account_documents": false,
+        "dispute": false,
+        "sms": false,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": false,
+      "physical_delivery": false,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.0,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.0,
+      "sms_per_active_user_month": 0.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  },
+  {
+    "name": "S10 International (EEA 60%) @6k",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 6000,
+      "monthly_net_adds": 0,
+      "churn_rate": 0.0
+    },
+    "issuance": {
+      "physical_share_issued": 0.0,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 300.0,
+      "in_app_share": 0.5,
+      "avg_ticket": 50.0,
+      "ecom_share": 0.3,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.6,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": false,
+        "kyc_attempt": false,
+        "account_documents": false,
+        "dispute": false,
+        "sms": false,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": false,
+      "physical_delivery": false,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.0,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.0,
+      "sms_per_active_user_month": 0.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  },
+  {
+    "name": "S11 Physical rollout 80% @6k",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 6000,
+      "monthly_net_adds": 0,
+      "churn_rate": 0.0
+    },
+    "issuance": {
+      "physical_share_issued": 0.8,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 200.0,
+      "in_app_share": 0.5,
+      "avg_ticket": 50.0,
+      "ecom_share": 0.3,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.95,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": true,
+        "kyc_attempt": false,
+        "account_documents": false,
+        "dispute": false,
+        "sms": false,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": true,
+      "physical_delivery": true,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.0,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.0,
+      "sms_per_active_user_month": 0.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  },
+  {
+    "name": "S12 Ops reality (KYC, disputes, SMS) @6k",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 6000,
+      "monthly_net_adds": 0,
+      "churn_rate": 0.0
+    },
+    "issuance": {
+      "physical_share_issued": 0.3,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 200.0,
+      "in_app_share": 0.5,
+      "avg_ticket": 50.0,
+      "ecom_share": 0.3,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.95,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": true,
+        "kyc_attempt": true,
+        "account_documents": false,
+        "dispute": true,
+        "sms": true,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": true,
+      "physical_delivery": true,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.2,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.001,
+      "sms_per_active_user_month": 2.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  },
+  {
+    "name": "S13 Growth scenario (+500/mo) @3k start",
+    "horizon_months": 36,
+    "adoption": {
+      "start_active_cards": 3000,
+      "monthly_net_adds": 500,
+      "churn_rate": 0.02
+    },
+    "issuance": {
+      "physical_share_issued": 0.2,
+      "issued_equals_net_adds": true
+    },
+    "usage": {
+      "spend_per_active_card_month": 200.0,
+      "in_app_share": 0.5,
+      "avg_ticket": 50.0,
+      "ecom_share": 0.3,
+      "three_ds_attempt_rate": 1.0,
+      "eea_share": 0.95,
+      "auth_multiplier": 1.0
+    },
+    "commercial": {
+      "partner_fee_pct": 0.02,
+      "interchange_pct": 0.002,
+      "b2b": {
+        "companies": 1,
+        "platform_fee_company_month": 0.0,
+        "employee_fee_month": 0.0,
+        "mode": "solve_employee_fee",
+        "target": {"type": "breakeven", "months": 12}
+      }
+    },
+    "toggles": {
+      "program_maintenance": true,
+      "additional_program": false,
+      "dedicated_bin": false,
+      "data_enrichment": false,
+      "three_ds_out_of_band": false,
+      "apple_pay": false,
+      "event_fees": {
+        "card_issue": true,
+        "plastic_personalization": true,
+        "kyc_attempt": true,
+        "account_documents": false,
+        "dispute": false,
+        "sms": false,
+        "pin_change": false,
+        "account_closure": false
+      },
+      "physical_manufacturing": true,
+      "physical_delivery": true,
+      "delivery_method": "dhl_tracked"
+    },
+    "ops_assumptions": {
+      "kyc_attempts_per_new_user": 1.0,
+      "doc_confirm_rate_per_new_user": 0.0,
+      "dispute_rate_per_tx": 0.0,
+      "sms_per_active_user_month": 0.0,
+      "pin_changes_per_active_user_month": 0.0,
+      "closures_per_churned_user": 0.0
+    }
+  }
+]

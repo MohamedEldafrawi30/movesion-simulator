@@ -1,0 +1,259 @@
+{
+  "id": "movesion_wallester_offer_v1",
+  "currency": "EUR",
+  "notes": "Authoritative pricing extracted from MOVESION / Wallester subscription offer. Treezor and deposit excluded.",
+
+  "fixed_monthly": [
+    {
+      "key": "program_maintenance",
+      "label": "Card Program Maintenance",
+      "amount": 2495,
+      "mandatory": true,
+      "enabled_by_default": true,
+      "description": "Required to operate one card program (Consumer or Business)"
+    },
+    {
+      "key": "additional_program",
+      "label": "Additional Card Program",
+      "amount": 995,
+      "mandatory": false,
+      "enabled_by_default": false,
+      "description": "Only if running Consumer + Business programs"
+    }
+  ],
+
+  "variable_monthly": {
+    "active_cards": {
+      "unit": "card",
+      "mandatory": true,
+      "tiers": [
+        { "up_to": 7500, "price": 0.95 },
+        { "up_to": 10000, "price": 0.90 },
+        { "up_to": 15000, "price": 0.85 },
+        { "up_to": 30000, "price": 0.80 },
+        { "up_to": 60000, "price": 0.70 },
+        { "up_to": 100000, "price": 0.65 },
+        { "up_to": 500000, "price": 0.60 },
+        { "up_to": null, "price": 0.55 }
+      ],
+      "description": "Charged per active card per month, even if unused"
+    },
+
+    "authorizations": {
+      "mandatory": true,
+      "eea": {
+        "unit": "authorization",
+        "tiers": [
+          { "up_to": 500000, "price": 0.13 },
+          { "up_to": 2000000, "price": 0.12 },
+          { "up_to": 5000000, "price": 0.11 },
+          { "up_to": null, "price": 0.10 }
+        ]
+      },
+      "non_eea": {
+        "unit": "authorization",
+        "tiers": [
+          { "up_to": 250000, "price": 0.20 },
+          { "up_to": 1500000, "price": 0.18 },
+          { "up_to": 3000000, "price": 0.16 },
+          { "up_to": null, "price": 0.14 }
+        ]
+      }
+    },
+
+    "three_ds": {
+      "mandatory": true,
+      "unit": "attempt",
+      "tiers": [
+        { "up_to": 500000, "price": 0.11 },
+        { "up_to": 1000000, "price": 0.10 },
+        { "up_to": null, "price": 0.09 }
+      ],
+      "description": "Applies to e-commerce transactions"
+    }
+  },
+
+  "event_fees": [
+    {
+      "key": "card_issue",
+      "label": "Card Issue (Virtual or Physical)",
+      "amount": 0.30,
+      "unit": "card",
+      "mandatory": true,
+      "enabled_by_default": true
+    },
+    {
+      "key": "plastic_personalization",
+      "label": "Plastic Card Personalization",
+      "amount": 0.70,
+      "unit": "card",
+      "mandatory": false,
+      "enabled_by_default": false,
+      "physical_only": true
+    },
+    {
+      "key": "kyc_attempt",
+      "label": "KYC Attempt",
+      "amount": 1.50,
+      "unit": "attempt",
+      "mandatory": false,
+      "enabled_by_default": false,
+      "usage_driven": true
+    },
+    {
+      "key": "account_documents",
+      "label": "Account Confirmation Documents",
+      "amount": 15.00,
+      "unit": "event",
+      "mandatory": false,
+      "enabled_by_default": false,
+      "usage_driven": true
+    },
+    {
+      "key": "dispute",
+      "label": "Dispute Case",
+      "amount": 20.00,
+      "unit": "case",
+      "mandatory": false,
+      "enabled_by_default": false,
+      "usage_driven": true
+    },
+    {
+      "key": "pin_change",
+      "label": "PIN Code Change",
+      "amount": 0.50,
+      "unit": "event",
+      "mandatory": false,
+      "enabled_by_default": false,
+      "usage_driven": true
+    },
+    {
+      "key": "account_closure",
+      "label": "Account Closure",
+      "amount": 25.00,
+      "unit": "event",
+      "mandatory": false,
+      "enabled_by_default": false,
+      "usage_driven": true
+    },
+    {
+      "key": "sms",
+      "label": "SMS Notification",
+      "amount": 0.20,
+      "unit": "message",
+      "mandatory": false,
+      "enabled_by_default": false,
+      "usage_driven": true
+    }
+  ],
+
+  "physical_cards": {
+    "enabled": false,
+    "manufacturing": {
+      "mandatory": false,
+      "prepayment_required": true,
+      "tiers": [
+        { "min_batch": 3000, "max_batch": 15000, "price": 3.50 },
+        { "min_batch": 15001, "max_batch": 30000, "price": 3.00 },
+        { "min_batch": 30001, "max_batch": null, "price": 2.50 }
+      ]
+    },
+    "delivery": {
+      "mandatory": false,
+      "default_method": "dhl_tracked",
+      "methods": [
+        { "key": "latvian_post", "label": "Latvian Post", "price": 2.50 },
+        { "key": "dhl_global_mail", "label": "DHL Global Mail", "price": 3.00 },
+        { "key": "dhl_tracked", "label": "DHL Global Mail (Tracked)", "price": 12.00 },
+        { "key": "express", "label": "Express (DPD/DHL)", "price": 30.00 }
+      ]
+    }
+  },
+
+  "optional_features": {
+    "apple_pay": {
+      "key": "apple_pay",
+      "label": "Apple Pay Turnkey Setup",
+      "setup": 17000,
+      "monthly": 0,
+      "mandatory": false,
+      "enabled_by_default": false,
+      "usage": "pass_through"
+    },
+    "dedicated_bin": {
+      "key": "dedicated_bin",
+      "label": "Dedicated BIN",
+      "setup": 8995,
+      "monthly": 995,
+      "mandatory": false,
+      "enabled_by_default": false
+    },
+    "additional_currency": {
+      "key": "additional_currency",
+      "label": "Additional Currency",
+      "shared_bin": { "setup": 1995, "monthly": 995 },
+      "own_bin": { "setup": 9995, "monthly": 995 },
+      "mandatory": false,
+      "enabled_by_default": false
+    },
+    "data_enrichment": {
+      "key": "data_enrichment",
+      "label": "Data Enrichment",
+      "setup": 0,
+      "monthly": 500,
+      "mandatory": false,
+      "enabled_by_default": false
+    },
+    "three_ds_out_of_band": {
+      "key": "three_ds_out_of_band",
+      "label": "3DS Out-of-Band",
+      "setup": 2000,
+      "monthly": 1000,
+      "mandatory": false,
+      "enabled_by_default": false
+    }
+  },
+
+  "atm_fx": {
+    "enabled": false,
+    "fx_fee_pct": 0.02,
+    "atm": {
+      "balance_inquiry": 0.50,
+      "withdrawal_eea": 2.00,
+      "withdrawal_non_eea": {
+        "percent": 0.026,
+        "fixed": 2.00
+      }
+    }
+  },
+
+  "classification_summary": {
+    "mandatory": [
+      "program_maintenance",
+      "active_cards",
+      "authorizations",
+      "three_ds",
+      "card_issue"
+    ],
+    "conditional_usage": [
+      "kyc_attempt",
+      "dispute",
+      "sms",
+      "pin_change",
+      "account_closure"
+    ],
+    "product_optional": [
+      "additional_program",
+      "apple_pay",
+      "dedicated_bin",
+      "additional_currency",
+      "data_enrichment",
+      "three_ds_out_of_band"
+    ],
+    "physical_only": [
+      "plastic_personalization",
+      "manufacturing",
+      "delivery"
+    ]
+  }
+}
